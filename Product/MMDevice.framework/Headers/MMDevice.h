@@ -162,6 +162,12 @@ typedef enum {
 + (NSString *)macaddress;
 + (NSString *)osLanguageAndCountry;
 
+// @param: typeSpecifier: CTL_HW identifiers
++ (NSUInteger)getSysInfo:(uint)typeSpecifier;
+
+// 返回设备原始model name。 如 iPhone12,5
++ (NSString *)deviceName;
+
 @end
 
 NS_ASSUME_NONNULL_END
