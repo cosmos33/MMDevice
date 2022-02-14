@@ -36,6 +36,16 @@ extern MMPlatformName MM_IPHONE_XR_NAMESTRING; //            @"iPhone XR"
 extern MMPlatformName MM_IPHONE_11_NAMESTRING; //            @"iPhone 11"
 extern MMPlatformName MM_IPHONE_11PRO_NAMESTRING; //         @"iPhone 11 Pro"
 extern MMPlatformName MM_IPHONE_11PROMAX_NAMESTRING; //      @"iPhone 11 Pro Max"
+extern MMPlatformName MM_IPHONE_SE2G_NAMESTRING; //          @"iPhone SE 2G"
+extern MMPlatformName MM_IPHONE_12MINI_NAMESTRING; //        @"iPhone 12 mini"
+extern MMPlatformName MM_IPHONE_12_NAMESTRING; //            @"iPhone 12"
+extern MMPlatformName MM_IPHONE_12PRO_NAMESTRING; //         @"iPhone 12 Pro"
+extern MMPlatformName MM_IPHONE_12PROMAX_NAMESTRING; //      @"iPhone 12 Pro Max"
+extern MMPlatformName MM_IPHONE_13MINI_NAMESTRING; //        @"iPhone 13 mini"
+extern MMPlatformName MM_IPHONE_13_NAMESTRING; //            @"iPhone 13"
+extern MMPlatformName MM_IPHONE_13PRO_NAMESTRING; //         @"iPhone 13 Pro"
+extern MMPlatformName MM_IPHONE_13PROMAX_NAMESTRING; //      @"iPhone 13 Pro Max"
+
 extern MMPlatformName MM_IPHONE_UNKNOWN_NAMESTRING; //       @"Unknown iPhone"
 
 extern MMPlatformName MM_IPOD_1G_NAMESTRING; //              @"iPod touch 1G"
@@ -44,6 +54,7 @@ extern MMPlatformName MM_IPOD_3G_NAMESTRING; //              @"iPod touch 3G"
 extern MMPlatformName MM_IPOD_4G_NAMESTRING; //              @"iPod touch 4G"
 extern MMPlatformName MM_IPOD_5G_NAMESTRING; //              @"iPod touch 5G"
 extern MMPlatformName MM_IPOD_6G_NAMESTRING; //              @"iPod touch 6G"
+extern MMPlatformName MM_IPOD_7G_NAMESTRING; //              @"iPod touch 7G"
 extern MMPlatformName MM_IPOD_UNKNOWN_NAMESTRING; //         @"Unknown iPod"
 
 extern MMPlatformName MM_IPAD_1G_NAMESTRING; //              @"iPad 1G"
@@ -57,10 +68,26 @@ extern MMPlatformName MM_IPAD_PRO12P9INCH_NAMESTRING; //     @"iPad Pro 12.9-inc
 extern MMPlatformName MM_IPAD_5G_NAMESTRING; //              @"iPad 5G"
 extern MMPlatformName MM_IPAD_PRO10P5INCH_NAMESTRING; //     @"iPad Pro 10.5-inch"
 extern MMPlatformName MM_IPAD_PRO12P9INCH2G_NAMESTRING; //   @"iPad Pro 12.9-inch 2G"
+extern MMPlatformName MM_IPAD_6G_NAMESTRING;//               @"iPad 6G"
+extern MMPlatformName MM_IPAD_PRO11INCH_NAMESTRING; //       @"iPad Pro 11-inch"
+extern MMPlatformName MM_IPAD_PRO12P9INCH3G_NAMESTRING;//    @"iPad Pro 12.9-inch 3G"
+extern MMPlatformName MM_IPAD_AIR3G_NAMESTRING;//           @"iPad Air 3G"
+extern MMPlatformName MM_IPAD_7G_NAMESTRING;//             @"iPad 7G"
+extern MMPlatformName MM_IPAD_PRO11INCH2G_NAMESTRING;//     @"iPad Pro 11-inch 2G"
+extern MMPlatformName MM_IPAD_PRO12P9INCH4G_NAMESTRING;//   @"iPad Pro 12.9-inch 4G"
+extern MMPlatformName MM_IPAD_8G_NAMESTRING;     //        @"iPad 8G"
+extern MMPlatformName MM_IPAD_AIR4G_NAMESTRING;//           @"iPad Air 4G"
+
 extern MMPlatformName MM_IPAD_MINI_NAMESTRING; //            @"iPad mini"
 extern MMPlatformName MM_IPAD_MINI_RETINA_NAMESTRING; //     @"iPad mini Retina"
 extern MMPlatformName MM_IPAD_MINI3_NAMESTRING; //           @"iPad mini 3"
 extern MMPlatformName MM_IPAD_MINI4_NAMESTRING; //           @"iPad mini 4"
+extern MMPlatformName MM_IPAD_MINI5G_NAMESTRING;//          @"iPad mini 5G"
+extern MMPlatformName MM_IPAD_PRO12P9INCH5TH_NAMESTRING;//    @"iPad Pro 12.9-inch 5th"
+extern MMPlatformName MM_IPAD_PRO11INCH3RD_NAMESTRING;//      @"iPad Pro 11-inch 3rd"
+extern MMPlatformName MM_IPAD_10P2INCH9TH_NAMESTRING;//       @"iPad Pro 10.2-inch 9th"
+extern MMPlatformName MM_IPAD_MINI6_NAMESTRING;//             @"iPad mini 6"
+
 extern MMPlatformName MM_IPAD_UNKNOWN_NAMESTRING; //         @"Unknown iPad"
 
 extern MMPlatformName MM_APPLETV_2G_NAMESTRING; //           @"Apple TV 2G"
@@ -77,11 +104,9 @@ extern MMPlatformName MM_IPHONE_SIMULATOR_IPAD_NAMESTRING; //    @"iPad Simulato
 
 typedef enum {
     MMDeviceUnknown,
-    
     MMDeviceiPhoneSimulator,
     MMDeviceiPhoneSimulatoriPhone, // both regular and iPhone 4 devices
     MMDeviceiPhoneSimulatoriPad,
-    
     MMDevice1GiPhone,
     MMDevice3GiPhone,
     MMDevice3GSiPhone,
@@ -106,14 +131,25 @@ typedef enum {
     MMDevice11iPhone,
     MMDevice11ProiPhone,
     MMDevice11ProMaxiPhone,
-    
+    MMDeviceSE2GiPhone,
+    MMDevice12miniiPhone,
+    MMDevice12iPhone,
+    MMDevice12ProiPhone,
+    MMDevice12ProMaxiPhone,
+
+    MMDevice13miniiPhone,
+    MMDevice13iPhone,
+    MMDevice13ProiPhone,
+    MMDevice13ProMaxiPhone,
+
     MMDevice1GiPod,
     MMDevice2GiPod,
     MMDevice3GiPod,
     MMDevice4GiPod,
     MMDevice5GiPod,
     MMDevice6GiPod,
-    
+    MMDevice7GiPod,
+
     MMDevice1GiPad,
     MMDevice2GiPad,
     MMDevice3GiPad,
@@ -125,23 +161,36 @@ typedef enum {
     MMDevice5GiPad,
     MMDevicePro10p5InchiPad,
     MMDevicePro12p9Inch2GiPad,
-    
+    MMDevice6GiPad,
+    MMDevicePro11InchiPad,
+    MMDevicePro12p9Inch3GiPad,
+    MMDeviceAir3GiPad,
+    MMDevice7GiPad,
+    MMDevicePro11Inch2GiPad,
+    MMDevicePro11Inch3rdPad,
+    MMDevicePro12p9Inch4GiPad,
+    MMDevicePro12p9Inch5thPad,
+    MMDevice10p2Inch9thPad,
+    MMDevice8GiPad,
+    MMDeviceAir4GiPad,
+
     MMDeviceiPadmini,
     MMDeviceiPadminiRetina,
     MMDeviceiPadmini3,
     MMDeviceiPadmini4,
-    
+    MMDeviceiPadmini5G,
+    MMDeviceiPadmini6th,
+
     MMDeviceAppleTV2,
     MMDeviceAppleTV3,
     MMDeviceAppleTV4,
     MMDeviceAppleTV4K,
     MMDeviceUnknownAppleTV,
-    
+
     MMDeviceUnknowniPhone,
     MMDeviceUnknowniPod,
     MMDeviceUnknowniPad,
     MMDeviceIFPGA,
-    
 } MMDevicePlatform;
 
 @interface MMDevice : NSObject
