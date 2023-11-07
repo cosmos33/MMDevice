@@ -46,6 +46,17 @@ extern MMPlatformName MM_IPHONE_13_NAMESTRING; //            @"iPhone 13"
 extern MMPlatformName MM_IPHONE_13PRO_NAMESTRING; //         @"iPhone 13 Pro"
 extern MMPlatformName MM_IPHONE_13PROMAX_NAMESTRING; //      @"iPhone 13 Pro Max"
 
+
+extern MMPlatformName MM_IPHONE_SE3G_NAMESTRING    ;//       @"iPhone SE 3rd Gen"
+extern MMPlatformName MM_IPHONE_14_NAMESTRING      ;//       @"iPhone 14"
+extern MMPlatformName MM_IPHONE_14PLUS_NAMESTRING  ;//       @"iPhone 14 Plus"
+extern MMPlatformName MM_IPHONE_14PRO_NAMESTRING   ;//       @"iPhone 14 Pro"
+extern MMPlatformName MM_IPHONE_14PROMAX_NAMESTRING;//       @"iPhone 14 Pro Max"
+extern MMPlatformName MM_IPHONE_15_NAMESTRING      ;//       @"iPhone 15"
+extern MMPlatformName MM_IPHONE_15PLUS_NAMESTRING  ;//       @"iPhone 15 Plus"
+extern MMPlatformName MM_IPHONE_15PRO_NAMESTRING   ;//       @"iPhone 15 Pro"
+extern MMPlatformName MM_IPHONE_15PROMAX_NAMESTRING;//       @"iPhone 15 Pro Max"
+
 extern MMPlatformName MM_IPHONE_UNKNOWN_NAMESTRING; //       @"Unknown iPhone"
 
 extern MMPlatformName MM_IPOD_1G_NAMESTRING; //              @"iPod touch 1G"
@@ -77,6 +88,7 @@ extern MMPlatformName MM_IPAD_PRO11INCH2G_NAMESTRING;//     @"iPad Pro 11-inch 2
 extern MMPlatformName MM_IPAD_PRO12P9INCH4G_NAMESTRING;//   @"iPad Pro 12.9-inch 4G"
 extern MMPlatformName MM_IPAD_8G_NAMESTRING;     //        @"iPad 8G"
 extern MMPlatformName MM_IPAD_AIR4G_NAMESTRING;//           @"iPad Air 4G"
+
 
 extern MMPlatformName MM_IPAD_MINI_NAMESTRING; //            @"iPad mini"
 extern MMPlatformName MM_IPAD_MINI_RETINA_NAMESTRING; //     @"iPad mini Retina"
@@ -141,6 +153,17 @@ typedef enum {
     MMDevice13iPhone,
     MMDevice13ProiPhone,
     MMDevice13ProMaxiPhone,
+    
+    MMDeviceSE3rdGen,
+    MMDevice14iPhone,
+    MMDevice14PlusiPhone,
+    MMDevice14ProIPhone,
+    MMDevice14ProMaxiPhone,
+    
+    MMDevice15iPhone,
+    MMDevice15PlusiPhone,
+    MMDevice15ProIPhone,
+    MMDevice15ProMaxiPhone,
 
     MMDevice1GiPod,
     MMDevice2GiPod,
@@ -173,6 +196,8 @@ typedef enum {
     MMDevice10p2Inch9thPad,
     MMDevice8GiPad,
     MMDeviceAir4GiPad,
+    MMDeviceAir5thGenWiFi,
+    MMDeviceAir5thGenWIFICellular,
 
     MMDeviceiPadmini,
     MMDeviceiPadminiRetina,
